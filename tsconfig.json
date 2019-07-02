@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "module": "commonjs", /*commonjs是指规范嘛？*/
+        "target": "es2015",  // 因node_modules包有关于es6的Set语法，所以这里不能为es5 报错 Cannot find name 'Set'. Do you need to change your target library? Try changing the `lib` compiler option to es2015 or later.
+        "jsx": "react"
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}
